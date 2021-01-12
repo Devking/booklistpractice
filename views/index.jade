@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  script(src='/javascripts/buttons.js')
+
   h1 create book
   hr
 
@@ -12,4 +14,5 @@ block content
   hr
   h1 List of books
   each book in books
-    p= book.title
+    div(class="book-entry book-#{book.id}")= book.title
+      span(class="close", onclick="deleteBook(#{book.id})") x

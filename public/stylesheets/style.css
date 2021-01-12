@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.book-entry {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: grey;
+}
+
+.close {
+  cursor: pointer;
+  color: black;
+  margin-left: 5px;
+}
