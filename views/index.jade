@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 create book
+  hr
+
+  form(action='/books', method='post')
+    label(for='title') title
+    input(name='title')
+    button(type='submit') Submit
+
+  hr
+  h1 List of books
+  each book in books
+    p= book
